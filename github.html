@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Developer Explorer | Capstone</title>
+    <link rel="stylesheet" href="/ojt project /github.css">
+    <style>
+  
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="search-box">
+        <input type="text" id="username-input" placeholder="Search GitHub Username (e.g. octocat)...">
+        <button id="search-btn">Explore</button>
+    </div>
+    <div id="rate-banner" class="rate-limit-info">Rate Limit: 60/60 remaining</div>
+
+    <div id="loading" class="spinner"></div>
+    <div id="error-container" class="hide"></div>
+
+    <div id="results" class="hide">
+        <div id="profile-card"></div>
+
+        <div class="repos-header">
+            <h3>Repositories</h3>
+            <select id="sort-select" style="padding: 6px 10px; border-radius: 4px; background: var(--card-dark); color: white; border: 1px solid var(--border-color); font-size: 14px;">
+                <option value="stargazers_count">Stars</option>
+                <option value="forks_count">Forks</option>
+                <option value="name">Name</option>
+            </select>
+        </div>
+        <div id="repos-list"></div>
+    </div>
+</div>
+
+<script src="/ojt project /github.js" >
+   
+</script>
+</body>
+</html>
